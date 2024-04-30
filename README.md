@@ -36,3 +36,48 @@ We recommend adding three Contacts for the Legal category: representatives from 
 ## Tips
 
 We also strongly recommend that you do not nest an Assured Workloads folder within another Assured Workloads folder - even if they are the same compliance framework - as this will cause errors. You can, however, nest Assured Workloads folders and non-Assured Workloads folders with each other.
+
+
+## Walkthrough
+
+1. Download [source](https://github.com/GoogleCloudPlatform/assured-workloads-terraform.git)
+
+    ```console
+    git clone https://github.com/GoogleCloudPlatform/assured-workloads-terraform.git
+    cd assured-workloads-terraform
+    ```
+
+2. Configure gcloud
+
+    ```console
+    gcloud auth login
+    gcloud auth application-default login
+    gcloud config set project [project name]
+    ```
+
+3. Configure environment per requirements in [variables.tf(https://github.com/googlestaging/assured-workloads-terraform/blob/main/variables.tf)
+
+    | Variable | Description | Default | Need update? |
+    |---|---|---|---|
+    | `organization_ID` | Google Cloud Organization ID | <> | *Yes* |
+    | `billing_account` | Google Cloud Billing Account | <> | *Yes* |
+    | `dependency_project_id` | Project ID to create a new Project | <> | *Yes* |
+    | `compliance_regime` | Assured Workloads Control Package | <> | *Yes* |
+    | `sovereignty` | Required for Sovereign Control Packages Only | <> | *Optional* |
+    | `display_name` | Display Name for the Assured Workloads Folder | <> | *Yes* |
+    | `location` | Location for the Assured Workloads Folder and underlying resoureces | <> | *Yes* |
+
+
+    Save changes in the `variables.tf` file
+
+       ```console
+    terraform init
+    terraform plan
+    terraform apply
+    ```
+    **Validate**: Terraform finishes successfully.
+
+    ```console
+    terraform apply
+    Apply complete! Resources: 0 added, 0 changed, 0 destroyed.
+    ```
