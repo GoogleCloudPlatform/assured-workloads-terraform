@@ -70,7 +70,7 @@ We also strongly recommend that you do not nest an Assured Workloads folder with
 
     Save changes in the `variables.tf` file
 
-       ```console
+   ```console
     terraform init
     terraform plan
     terraform apply
