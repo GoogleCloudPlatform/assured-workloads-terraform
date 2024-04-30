@@ -6,13 +6,13 @@ Assured Workloads provides control packages to support the creation of compliant
 
 Control packages are organized into control package families according to the type of controls they provide:
 
-1.Regional controls provide data residency with optional personnel controls and regional support.
+1. Regional controls provide data residency with optional personnel controls and regional support.
 
-2.Sovereign controls provide data residency, personnel controls, regional support, and enhanced controls for data sovereignty such as Cloud External Key Manager (Cloud EKM), Cloud HSM, and Key Access Justifications. Additional partner-managed control packages are available through Sovereign Controls by Partners.
+2. Sovereign controls provide data residency, personnel controls, regional support, and enhanced controls for data sovereignty such as Cloud External Key Manager (Cloud EKM), Cloud HSM, and Key Access Justifications. Additional partner-managed control packages are available through Sovereign Controls by Partners.
 
-3.Regulatory controls provide certified controls tailored to meet specific regulatory and compliance statute requirements.
+3. Regulatory controls provide certified controls tailored to meet specific regulatory and compliance statute requirements.
 
-4.This page provides more information about each control package and control package available in Assured Workloads, which are available in two pricing tiers: Free and Premium. See Assured Workloads pricing for more information about these tiers.
+4. This page provides more information about each control package and control package available in Assured Workloads, which are available in two pricing tiers: Free and Premium. See Assured Workloads pricing for more information about these tiers.
 
 Before proceeding, it is important to understand that Assured Workloads is comprised of two tiers: Free and Premium. More information is available on the [Assured Worklods pricing page](https://cloud.google.com/assured-workloads/pricing)  
 
